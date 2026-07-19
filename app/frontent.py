@@ -1,6 +1,8 @@
 import streamlit as st
 from backend import generated_post
 
+st.set_page_config(page_title="Linkedin Post Generator",)
+
 st.title("LinkedIn Post Generator")
 
 st.divider()
