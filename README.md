@@ -1,35 +1,62 @@
-# Linkedin Post Generator
+# 🚀 LinkedIn Post Generator
 
-An AI-powered tool that crafts engaging, professional LinkedIn posts in seconds to help you build your personal brand effortlessly.
+> **Turn raw thoughts into high-converting LinkedIn posts in seconds.** This tool automates content creation by transforming bullet points, articles, or rough ideas into engaging, professional LinkedIn posts—saving creators and professionals hours of writer's block every week.
 
-# Features
+---
 
-Core Functionality
+## ✨ Key Features
 
-* AI-Powered Generation: Instantly generate high-quality, professional LinkedIn posts from just a few keywords or a short prompt.
+- **💡 Instant Draft Generation:** Convert rough bullet points or topics into fully formatted LinkedIn posts.
+- **🎯 Custom Tone Selection:** Adapt post style (e.g., Professional, Storytelling, Controversial, Educational, Humorous).
+- **🪝 Hook & CTA Suggestions:** Automatically generates attention-grabbing headline hooks and engaging call-to-actions.
+- **✨ Hashtag & Formatting Assistant:** Generates relevant hashtags and formats text with clean spacing and emojis.
 
-* Customizable Length: Tailor the length of your post like short, mediem and long
+---
 
-* Custom Language: Tail the language of post like English or Hinglish.
+## 🛠️ Prerequisites / Tech Stack
 
-# Tech Stack
+### Built With:
+- **Language:** Python
+- **Frontend:** Streamlit
+- **Backend:** Langchain
+- **LLM Provider:** OpenAI API
 
-Frontend & UI
+### Requirements:
+- **Python:** `>= 3.10+`
+- **Package Manager:** `uv`
+- **API Key:** Active OpenAI API Key
 
-* Streamlit: Handles the entire user interface, turning your Python script into an interactive web app with minimal frontend code.
+---
 
-AI & LLM Orchestration
+## ⚙️ Environment Variables
 
-* LangChain: Orchestrates the prompt templates, manages the LLM chain, and structures the interaction with the AI model.
+Create a `.env` file in the root directory and populate it with your credentials:
 
-* python-dotenv: Securely manages environment variables (like API keys) to keep them out of your source control.
+```
+# Server Config
+PORT=5000
 
-Data Processing & Utilities
+# AI Provider API Keys
+OPENAI_API_KEY=your_openai_api_key_here
+```
 
-* Pandas: Used for structured data handling, parsing, or manipulation (e.g., managing user history, prompt logs, or bulk input data).
+## 🚀 Installation & Quick Start
+Follow these steps to set up and run the project locally.
 
-* json (Built-in): Handles the parsing, structuring, and saving of raw data or API payloads.
+### 1. Clone the Repository
+```
+git clone https://github.com/your-username/linkedin-post-generator.git
+cd linkedin-post-generator
+```
 
-* re (Regular Expressions): Handles text cleaning, formatting, or extracting specific elements (like hashtags or emojis) from the generated posts.
+### 2. Install Dependencies
+```
+# If using Python
+pip install -r requirements.txt
+```
 
-* os (Built-in): Interacts with the operating system for file path routing and environment variable loading.
+### 3. Run the Application
+```
+# Development Server
+streamlit run app/streamlit.py
+```
